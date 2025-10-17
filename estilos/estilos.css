@@ -1,0 +1,264 @@
+/* Este documento recoge todas las reglas de estilo que he aplicado en la web */
+/*A modo general se aplica la letra cambria a todas las páginas y fondo gris muy clara*/
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+body{
+	font-family:cambria;
+	font-size: 16px;
+	background-color:lightergray;
+}
+/*Se van configurando las diferentes secciones y clases para mantener el estilo y coherencia se usa colores suaves para fondos y letras en negro y azul*/
+header {
+	position:sticky;
+	top:0;
+    background-color: lightgray;
+    color: white; 
+    padding: 20px 0;
+	z-index:10;
+}
+header nav a {
+    color: black;
+    text-decoration: none;
+    margin: 0;
+}
+nav {
+	text-align:right;
+}
+nav a {
+	color:#000;
+	text-decoration: none;
+	font-size: 0.9em;
+	padding: 6px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+	background-color: lightgray;
+}
+/*con la etiqueta de hover se consigue un efecto, como en este caso que modifico el color del fondo, cuando se pasa el ratón sobre la opción*/
+nav a:hover {
+ color:#FFF;
+ background-color:#666;
+}
+/*En los siguientes campos se cambia un poco color y alineamiento de los encabezados con etiqueta H*/
+h1{
+    color:darkblue;
+    text-align:center;
+	margin:20px;
+}
+h2 {
+	color:#004d99;
+	margin:20px;
+}
+h3 {
+	margin:20px;
+}
+p {
+	font-size:1em;
+	margin:20px;
+}
+a {
+	color:#fff;
+	text-decoration: none;
+	font-size: 0.9em;
+	padding: 6px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	background-color: gray;
+}
+/*con la etiqueta de hover se consigue un efecto, como en este caso que modifico el color del fondo, cuando se pasa el ratón sobre la opción*/
+a:hover {
+ color:#FFF;
+ background-color:#666;
+}
+ul,li{
+	margin:10px 40px ;
+	text-align:left;
+	padding:0;
+}
+.Listado {
+color:#000;
+text-indent:30px;	
+}
+footer {
+	background-color: gray;
+    color: white;
+    padding: 20px;
+    width: 100%;
+}
+.footer-principal {
+	display:flex;
+	justify-content:space-around;
+	align-items:flex-start;
+	margin-bottom:15px;
+}
+.footer-principal.nota_Aut {
+	flex-grow:0;
+	max-width:60%;
+}
+/*En el pie, me he visto en la necesidad de configurar el formato activando el Flex, para poder alinear los elementos de forma más espaciada con el space-around*/
+.footer-principal.boton-contacto {
+	align-self:flex-start;
+	text-decoration:none;
+	margin:20px;
+	padding:10px 20px;
+	border-radius:5px;
+
+}
+/*Poniendo definiciones de clases puedo ajustar mejor el formato y alineación para cada parte del texto*/
+.derechos {
+	text-align:center;
+	margin-top:10px;
+	font-size:0.9em;
+}
+footer p {
+    margin: 5px 0;
+}
+/*Los siguientes apartados definen la configuración aplicada a la lista presentada a modo de tarjetas*/
+.lista-cuadros {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+	justify-content:center;
+}
+.tarjeta {
+    width: calc(33% - 20px); 
+    padding: 15px;
+    background-color: #C7FBFF;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+/*Con hover vuelvo a configurar un comportamiento diferente de presentación cuando se pasa el ratón por encima, en este caso el efecto es como de desplazamiento en el eje Y*/
+.tarjeta:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+.tarjeta h4 {
+    color: darkblue;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.tarjeta p {
+    margin:0;
+	
+}
+.tarjeta img {
+	width:100%;
+	height:200px;
+	margin-bottom:10px;
+	object-fit: cover;
+	object-position: center;
+}
+.boton_noticias{
+    text-decoration: none; /* Quita el subrayado predeterminado */
+	background-color: #00C3D1; 
+    color: white; 
+    padding: 10px 20px; /* Con el padding parece que es un boton al rellenar el área que rodea al texto*/
+    border-radius: 5px; /* Con esta opción consigo el efecto de bordes redondeados */
+    font-weight: bold;
+    display: inline-block;
+}
+.boton_derecha {
+    width: 100%; 
+    display: flex; 
+    justify-content: flex-end; 
+	margin-top: 20px; 
+}
+/*Con este estilo, cambio los enlaces de las noticias para que en lugar de verse como botones, el texto salga subrallado, en cursiva, y sin fondo*/
+.leer_mas {
+	font-style:italic;
+	color:black;
+	text-decoration:underline;
+	border:none;
+	background:none;
+	box-shadow:none;
+}
+.ponente {
+	font-style:Italic;
+	font-weight:bold;
+}
+/*En esta parte configuro el estilo que aplicaré al formulario para que salga enmarcado y con una estructura más compacta*/
+form {
+	background-color: white;
+	padding: 20px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+	max-width:600px;
+	margin:0 auto 40px auto;
+}
+label {
+	display:block;
+	font-weight:bold;
+	margin-top: 15px;
+    margin-bottom: 5px;
+	color:#555;
+}
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+form br {
+    display: none;
+}
+/*En este último apartado se configura el estilo que aplicaré a la tabla*/
+table {
+	width:100%;
+	margin:30px 0;
+	caption-side:top;
+}
+th,td {
+	padding:12px 15px;
+	border-bottom: 1px solid #ddd;
+	text-align:left;
+}
+/* Agregado este estilo para ocultar en noticias relacionadas parte del texto */
+.oculto {
+    display: none !important; 
+    /* El !important ayuda a asegurar que el CSS oculta el elemento 
+       incluso si hay otros estilos que lo fuerzan a mostrarse. 
+	   Lo uso en la siguiente categoria también que aplico en la pagina de expositores */
+}
+#categorias tr.fila-resaltada {
+    background-color: lightgray !important; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+/* 1. Clase para OCULTAR el mapa al inicio */
+.mapa-oculto {
+    display: none;
+}
+
+/* 2. Estilo para el contenedor del mapa */
+#contenedor-mapa {
+    position: fixed; /* Lo mantiene en su lugar aunque el usuario se desplace */
+    top: 150px;
+    right: 20px;
+    width: 600px; /* Ancho del contenedor */
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    z-index: 100; /* Asegura que esté sobre otros elementos */
+}
+
+/* 3. Estilo para la imagen dentro del contenedor */
+#contenedor-mapa img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Opcional: Para que el texto que activa el mapa se vea interactivo */
+#activador-mapa {
+    cursor: pointer;
+    text-decoration: underline;
+    color: blue;
+}

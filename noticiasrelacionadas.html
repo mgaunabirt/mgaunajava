@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--Este texto no aparecerá en el navegador -->  
+<head>
+<meta charset="utf-8"/>
+<meta name="FIBASQUETUR" content="Bienvenidos a FIBASQUETUR"/>
+<meta name="description" content="Novedades del Sector de Viajes y Turismo"/>
+<title>Novedades</title>
+<link rel="stylesheet" type="text/css" href="estilos/estilos.css"/>
+</head>
+<body>
+<header>
+<nav>
+<a href="./index.html">Página Principal</a>
+<a href="./expositores.html">Reserva tu espacio</a>
+<a href="./agenda.html">Agenda de eventos</a>
+<a href="./noticiasrelacionadas.html">Canal de Noticias</a>
+<a href="./contacto_ubicacion.html">¿Dónde estamos?</a>
+</nav>
+<h1>EL RINCÓN DEL VIAJERO: Últimas Novedades</h1>
+</header>
+<main>
+<!--Se vuelve a repetir la forma de representar del índice, se han vuelto a usar el modo lista enmarcadas a modo tarjetas-->
+<section>
+<h2>Historias, Tendencias y Consejos de Viaje.</h2>
+<ul class="lista-cuadros">
+<li class="tarjeta">
+<img src="./imagenes/caribe.jpg" alt="Turismo en el Caribe"></img>
+<h4>El Caribe Apuesta por Rutas Culturales.</h4>
+<p>Fecha: 15/11/2025</p>
+<p>Resumen: Los países caribeños están diversificando su oferta, combinando sol y playa con la rica historia de sus pueblos. Descubre los nuevos itinerarios.</p>
+<div class="boton_derecha">
+<a href="https://www.caribbeannewsdigital.com/es/entrevistas/redes-y-rutas-la-apuesta-de-jordi-tresserras-por-el-turismo-cultural" class="boton_noticias">LEER MÁS</a>
+</div>
+</li>
+<li class="tarjeta">
+<img src="./imagenes/avion.jpg" alt="Compromiso aerolineas con el medioambiente"></img>
+<h4>Las Aerolíneas Aumentan su Compromiso con el Combustible Ecológico.</h4>
+<p>Fecha: 28/10/2025</p>
+<p>Resumen: Un informe reciente muestra la inversión masiva del sector aéreo en SAF (Combustible de Aviación Sostenible) para reducir su huella de carbono.</p>
+<div class="boton_derecha">
+<a href="https://www.fcmtravel.com/es-es/recursos/insights/como-las-aerolineas-estan-redefiniendo-el-medio-ambiente" class="boton_noticias">LEER MÁS</a>
+</div>
+</li>
+<li class="tarjeta">
+<img src="./imagenes/seguros.jpg" alt="Consejos para elegir el mejor seguro"></img>
+<h4>Guía Rápida: Cómo Elegir el Mejor Seguro de Viaje.</h4>
+<p>Fecha: 01/10/2025</p>
+<p>Resumen: Consejos esenciales para viajeros independientes que buscan protección sin gastar de más.</p>
+<div class="boton_derecha">
+<a href="https://www.mochileandoporelmundo.com/como-elegir-mejor-seguro-de-viaje/" class="boton_noticias">LEER MÁS</a>
+</div>
+</li>
+<li class="tarjeta">
+<img src="./imagenes/solitario.jpg" alt="Turismo Sostenible - Creditos imagen:Олег Мороз en unsplash.com"></img>
+<h4>Consejos de seguridad para viajar en solitario.</h4>
+<p>Fecha:30/09/2025</p>
+<p>Resumen: Viajar solo exige planificación, sentido común y confianza en tus instintos para garantizar una experiencia segura y enriquecedora.</p>
+<div class="boton_derecha">
+<a href="https://www.hostelworld.com/blog/es/consejos-de-seguridad-para-viajar-solo/" class="boton_noticias">LEER MÁS</a>
+</div>
+</li>
+</ul>
+</section>
+<div style="text-align: left; margin-top: 30px;margin-bottom:20px">
+<button id="btn-mostrar-mas" onclick="alternarVisibilidad('seccion-extra', this)">+ Mostrar Más Noticias</button>
+</div>
+<!--En esta sección he cambiado el formato de lista, a una ordenada con hipervínculos a webs externas como todos los enlaces que he ido insertando a modo de ejemplo de noticias-->
+<section id="seccion-extra" class="oculto">
+<h2>Otras Novedades y Destinos</h2>
+<ul>
+<li>Europa: Rutas Sostenibles...</li>
+<ol>
+<li>Euronews Green - "¿Es posible viajar a Europa de forma sostenible?</li>
+<p>Un análisis sobre opciones de viaje ecológicas en el continente.<a href="https://es.euronews.com/viajes/2025/08/17/que-es-el-tripchaining-y-como-podria-ayudarte-a-viajar-de-forma-mas-sostenible" class="leer_mas"> Sigue leyendo</a></p>
+<li>European Cyclists' Federation - EuroVelo</li>
+<p>La red de rutas ciclistas de largo recorrido en Europa (más de 90,000 km).<a href="https://en.eurovelo.com/" class="leer_mas"> Sigue leyendo</a></p>
+<li>Interrail - "Viajar de forma sostenible por Europa"</li>
+<p>Guía oficial para planificar rutas en tren con el pase Interrail.<a href="https://www.interrail.eu/es/tripplanner" class="leer_mas">Sigue leyendo</a></p>
+</ol>
+<li>América: Turismo de Aventura en los Andes.<a href="https://www.pasonoroeste.com/blog/viajar-a-los-andes-aventura-extrema-en-grupo/" class="leer_mas">Sigue leyendo</a></li>
+<li>Asia: Tecnología y Cultura Milenaria.<a href="https://www.viajesmonoparentales.com/japon-viaje-monoparental/" class="leer_mas">Sigue leyendo</a></li>
+</ul>
+</section>
+</main>
+<footer>
+<div class="footer-principal">
+<div class="nota_Aut"><p>Esta es una web de aprendizaje, contenido ficticio con fines didácticos, cualquier sugerencia/aclaración/reclamación rellene el siguiente formulario</p>
+</div>
+<a href="./formularioContacto.html" class="boton-contacto">Formulario de Contacto</a>
+</div>
+<p class="derechos">© 2025 Feria Internacional Fibasquetur. Todos los derechos reservados.</p>
+</footer>
+<script src="./funciones/funciones.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--Este texto no aparecerá en el navegador -->  
+<head>
+<meta charset="utf-8"/>
+<meta name="FIBASQUETUR" content="Bienvenidos a FIBASQUETUR"/>
+<meta name="description" content="Contáctanos"/>
+<title>Formulario Contacto</title>
+<link rel="stylesheet" type="text/css" href="estilos/estilos.css"/>
+</head>
+<body>
+<header>
+<nav>
+<a href="./index.html">Página Principal</a>
+<a href="./expositores.html">Reserva tu espacio</a>
+<a href="./agenda.html">Agenda de eventos</a>
+<a href="./noticiasrelacionadas.html">Canal de Noticias</a>
+<a href="./contacto_ubicacion.html">¿Dónde estamos?</a>
+</nav>
+<h1>Formulario de Contacto Básico</h1>
+</header>
+<body>
+<h2>Contacto, Reservas y Observaciones</h2>
+<form action="mailto:mgauna@birt.eus" method="post" enctype="text/plain">
+<label for="nombre">Nombre de la persona interesada:</label><br/>
+<input type="text" id="nombre" name="Nombre_Completo" required><br/><br/>
+<label for="correo">Correo electrónico de contacto:</label><br/>
+<input type="email" id="correo" name="correo_contacto" required><br><br>
+<label for="telefono">Teléfono de contacto:</label><br><br>
+<input type="Telefono" id="telefono" name="Telefono_contacto"><br><br>
+<label type="motivo">Selecciona el motivo de tu contacto:</label>
+<select id="motivo" name="Motivo_de_contacto" required>
+    <option value="" disabled selected>-- Elige una opción --</option>
+    <option value="Consulta_General">Consulta General</option>
+    <option value="Reserva_Espacio">Hacer una reserva de un espacio para exponer</option>
+    <option value="Inscripcion_actividad">Inscripción a actividad, mesa o ponencia</option>
+    <option value="Queja_Sugerencia">Queja o Sugerencia</option>
+	<option value="Otros">Opción no incluida en los casos anteriores</option>
+</select>
+<br><br>
+<label for="observaciones">Expón brevemente tu motivo a continuación:</label><br>
+<textarea id="observaciones" name="observaciones" rows="5" cols="40"></textarea><br><br>
+<input type="submit" value="Enviar Formulario">
+</form>
+<footer>
+<div class="footer-principal">
+<div class="nota_Aut"><p>Esta es una web de aprendizaje, contenido ficticio con fines didácticos, cualquier sugerencia/aclaración/reclamación rellene el siguiente formulario</p>
+</div>
+<a href="./formularioContacto.html" class="boton-contacto">Formulario de Contacto</a>
+</div>
+<p class="derechos">© 2025 Feria Internacional Fibasquetur. Todos los derechos reservados.</p>
+</footer>
+</body>
+</html>
