@@ -6,6 +6,14 @@ function obtenerNombreDeArchivo(ruta) {
     return ruta.substring(ruta.lastIndexOf('/') + 1);
 }
 const nombreDeArchivoActual = obtenerNombreDeArchivo(window.location.pathname.toLowerCase());
+mostrarBienvenida(nombreDeArchivoActual);
+
+// FUNCIÓN DE BIENVENIDA para la página de inicio.
+function mostrarBienvenida(nombreDeArchivo) {
+    if (nombreDeArchivo === 'index.html' || nombreDeArchivo === '') {
+        alert("¡Bienvenido/a a nuestra página web! Esperamos que disfrutes tu visita.");
+    }
+}
 
 // FUNCIÓN en Mostrar más ./noticiasrelacionadas.html - oculta texto onclick
 function alternarVisibilidad(idSeccion, boton) {
@@ -85,9 +93,4 @@ if (nombreDeArchivoActual === 'expositores.html') {
     inicializarExpositores();
 } else if (nombreDeArchivoActual === 'contacto_ubicacion.html') {
     inicializarContacto();
-} 
-
-// Mensaje de Bienvenida para página principal.
-if (nombreDeArchivoActual === 'index.html' || nombreDeArchivoActual === '') {
-    alert("¡Bienvenido/a a nuestra página web! Esperamos que disfrutes tu visita.");
 }
