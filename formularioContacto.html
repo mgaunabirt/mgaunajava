@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-<!--Este texto no aparecerá en el navegador -->  
+<!--Este es un formulario para recoger los datos de contacto básicos de contacto, reservas, feedback....-->
 <head>
 <meta charset="utf-8"/>
 <meta name="FIBASQUETUR" content="Bienvenidos a FIBASQUETUR"/>
@@ -17,12 +17,15 @@
 <a href="./noticiasrelacionadas.html">Canal de Noticias</a>
 <a href="./contacto_ubicacion.html">¿Dónde estamos?</a>
 </nav>
-<h1>Formulario de Contacto Básico</h1>
+<h1>Formulario de Contacto</h1>
 </header>
+<!--La parte superior es igual en todas las páginas-->
 <body>
 <h2>Contacto, Reservas y Observaciones</h2>
+<!--En el siguiente punto se define que hacer con la información, en este caso se manda a un correo electrónico-->
 <form action="mailto:mgauna@birt.eus" method="post" enctype="text/plain">
 <label for="nombre">Nombre de la persona interesada:</label><br/>
+<!--En esta parte se recopilan los datos con la etiqueta Input, marcando con label como se muestran en pantalla-->
 <input type="text" id="nombre" name="Nombre_Completo" required><br/><br/>
 <label for="correo">Correo electrónico de contacto:</label><br/>
 <input type="email" id="correo" name="correo_contacto" required><br><br>
